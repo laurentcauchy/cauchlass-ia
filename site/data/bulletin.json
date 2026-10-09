@@ -1,0 +1,489 @@
+{
+  "date": "2026-10-09",
+  "vigilance": "very-high",
+  "reviewer": "Laurent",
+  "automationConnected": false,
+  "sources": [
+    {
+      "id": "bulletin",
+      "label": "CloseAI — Bulletin du 9 octobre 2026",
+      "url": "sources/CloseAI_Bulletin_Meteo_2026-10-09.docx",
+      "kind": "internal"
+    },
+    {
+      "id": "registry",
+      "label": "CloseAI — Tableau des risques du 9 octobre 2026",
+      "url": "sources/CloseAI_Tableau_Risques_2026-10-09.xlsx",
+      "kind": "internal"
+    },
+    {
+      "id": "zenity",
+      "label": "Zenity Labs · 08/10/2026",
+      "url": "https://labs.zenity.io/post/agentcorruption-how-a-single-prompt-collapsed-the-entire-cloud-security-model",
+      "kind": "primary"
+    },
+    {
+      "id": "tnw",
+      "label": "The Next Web · 08/10/2026 · réponse AWS / AWS response",
+      "url": "https://thenextweb.com/news/aws-agentcore-zenity-agentcorruption-one-prompt-agents",
+      "kind": "reported-response"
+    },
+    {
+      "id": "reuters",
+      "label": "Reuters · 28/09/2026 · à revalider / pending verification",
+      "url": "https://www.reuters.com/business/openai-shelves-new-ai-model-after-internal-safety-tests-wsj-reports-2026-09-28/",
+      "kind": "unverified"
+    },
+    {
+      "id": "wsj",
+      "label": "Wall Street Journal · à revalider / pending verification",
+      "url": "https://www.wsj.com/tech/ai/openai-chatgpt-model-release-cancel-safety-5a2f9f42",
+      "kind": "unverified"
+    }
+  ],
+  "risks": [
+    {
+      "id": "N01",
+      "date": null,
+      "domain": {
+        "fr": "Capacités générales",
+        "en": "General capabilities"
+      },
+      "title": {
+        "fr": "Entrée historique du registre CloseAI",
+        "en": "Historical registry entry"
+      },
+      "score": 4,
+      "historical": true,
+      "source": "registry",
+      "row": 2,
+      "detail": {
+        "fr": "Référence antérieure",
+        "en": "Imported assessment; underlying evidence requires review."
+      },
+      "qualification": {
+        "fr": "Conservé",
+        "en": "Imported editorial assessment."
+      }
+    },
+    {
+      "id": "N02",
+      "date": null,
+      "domain": {
+        "fr": "Agents autonomes",
+        "en": "Autonomous agents"
+      },
+      "title": {
+        "fr": "Entrée historique du registre CloseAI",
+        "en": "Historical registry entry"
+      },
+      "score": 4,
+      "historical": true,
+      "source": "registry",
+      "row": 3,
+      "detail": {
+        "fr": "Référence antérieure",
+        "en": "Imported assessment; underlying evidence requires review."
+      },
+      "qualification": {
+        "fr": "Conservé",
+        "en": "Imported editorial assessment."
+      }
+    },
+    {
+      "id": "N03",
+      "date": null,
+      "domain": {
+        "fr": "Cyber",
+        "en": "Cybersecurity"
+      },
+      "title": {
+        "fr": "Entrée historique du registre CloseAI",
+        "en": "Historical registry entry"
+      },
+      "score": 4,
+      "historical": true,
+      "source": "registry",
+      "row": 4,
+      "detail": {
+        "fr": "Référence antérieure",
+        "en": "Imported assessment; underlying evidence requires review."
+      },
+      "qualification": {
+        "fr": "Conservé",
+        "en": "Imported editorial assessment."
+      }
+    },
+    {
+      "id": "N04",
+      "date": null,
+      "domain": {
+        "fr": "Robotique",
+        "en": "Robotics"
+      },
+      "title": {
+        "fr": "Entrée historique du registre CloseAI",
+        "en": "Historical registry entry"
+      },
+      "score": 4,
+      "historical": true,
+      "source": "registry",
+      "row": 5,
+      "detail": {
+        "fr": "Référence antérieure",
+        "en": "Imported assessment; underlying evidence requires review."
+      },
+      "qualification": {
+        "fr": "Conservé",
+        "en": "Imported editorial assessment."
+      }
+    },
+    {
+      "id": "N05",
+      "date": null,
+      "domain": {
+        "fr": "Contrôle / alignement",
+        "en": "Control / alignment"
+      },
+      "title": {
+        "fr": "Entrée historique du registre CloseAI",
+        "en": "Historical registry entry"
+      },
+      "score": 4,
+      "historical": true,
+      "source": "registry",
+      "row": 6,
+      "detail": {
+        "fr": "Référence antérieure",
+        "en": "Imported assessment; underlying evidence requires review."
+      },
+      "qualification": {
+        "fr": "Conservé",
+        "en": "Imported editorial assessment."
+      }
+    },
+    {
+      "id": "N06",
+      "date": null,
+      "domain": {
+        "fr": "Réplication",
+        "en": "Replication"
+      },
+      "title": {
+        "fr": "Entrée historique du registre CloseAI",
+        "en": "Historical registry entry"
+      },
+      "score": 4,
+      "historical": true,
+      "source": "registry",
+      "row": 7,
+      "detail": {
+        "fr": "Référence antérieure",
+        "en": "Imported assessment; underlying evidence requires review."
+      },
+      "qualification": {
+        "fr": "Conservé",
+        "en": "Imported editorial assessment."
+      }
+    },
+    {
+      "id": "N07",
+      "date": null,
+      "domain": {
+        "fr": "Agents / contournement",
+        "en": "Agents / circumvention"
+      },
+      "title": {
+        "fr": "Contournement ou persistance hors périmètre observé dans les incidents suivis",
+        "en": "Circumvention or persistence outside the authorised scope"
+      },
+      "score": 5,
+      "historical": false,
+      "source": "registry",
+      "row": 8,
+      "detail": {
+        "fr": "09/10/2026 — AgentCorruption : Propagation d’une compromission entre agents via accès et autorisations excessives.",
+        "en": "Updated by the 9 October bulletin: controlled AgentCorruption research."
+      },
+      "qualification": {
+        "fr": "Démonstration contrôlée par chercheurs ; pas d’autonomie spontanée ; AWS conteste la qualification.",
+        "en": "Research demonstration; no spontaneous autonomy; AWS disputes the vulnerability classification."
+      }
+    },
+    {
+      "id": "N08",
+      "date": null,
+      "domain": {
+        "fr": "Infrastructures",
+        "en": "Infrastructure"
+      },
+      "title": {
+        "fr": "Entrée historique du registre CloseAI",
+        "en": "Historical registry entry"
+      },
+      "score": 4,
+      "historical": true,
+      "source": "registry",
+      "row": 9,
+      "detail": {
+        "fr": "Référence antérieure",
+        "en": "Imported assessment; underlying evidence requires review."
+      },
+      "qualification": {
+        "fr": "Conservé",
+        "en": "Imported editorial assessment."
+      }
+    },
+    {
+      "id": "N09",
+      "date": null,
+      "domain": {
+        "fr": "Autonomie matérielle",
+        "en": "Material autonomy"
+      },
+      "title": {
+        "fr": "Entrée historique du registre CloseAI",
+        "en": "Historical registry entry"
+      },
+      "score": 4,
+      "historical": true,
+      "source": "registry",
+      "row": 10,
+      "detail": {
+        "fr": "Référence antérieure",
+        "en": "Imported assessment; underlying evidence requires review."
+      },
+      "qualification": {
+        "fr": "Conservé",
+        "en": "Imported editorial assessment."
+      }
+    },
+    {
+      "id": "N10",
+      "date": null,
+      "domain": {
+        "fr": "Cyber",
+        "en": "Cybersecurity"
+      },
+      "title": {
+        "fr": "Capacités cyber autonomes de modèles de frontière",
+        "en": "Autonomous cyber capabilities of frontier models"
+      },
+      "score": 5,
+      "historical": false,
+      "source": "registry",
+      "row": 11,
+      "detail": {
+        "fr": "Risque déjà maximal",
+        "en": "Imported assessment; underlying evidence requires review."
+      },
+      "qualification": {
+        "fr": "Conservé",
+        "en": "Imported editorial assessment."
+      }
+    },
+    {
+      "id": "N11",
+      "date": null,
+      "domain": {
+        "fr": "Auto-amélioration",
+        "en": "Self-improvement"
+      },
+      "title": {
+        "fr": "IA accélérant la recherche et le développement de l’IA",
+        "en": "AI accelerating AI research and development"
+      },
+      "score": 4,
+      "historical": false,
+      "source": "registry",
+      "row": 12,
+      "detail": {
+        "fr": "Trajectoire ascendante ; seuil récursif non observé",
+        "en": "Rising trajectory; recursive threshold not observed."
+      },
+      "qualification": {
+        "fr": "Conservé",
+        "en": "Imported editorial assessment."
+      }
+    },
+    {
+      "id": "N12",
+      "date": null,
+      "domain": {
+        "fr": "Énergie / ressources",
+        "en": "Energy / resources"
+      },
+      "title": {
+        "fr": "Entrée historique du registre CloseAI",
+        "en": "Historical registry entry"
+      },
+      "score": 4,
+      "historical": true,
+      "source": "registry",
+      "row": 13,
+      "detail": {
+        "fr": "Référence antérieure",
+        "en": "Imported assessment; underlying evidence requires review."
+      },
+      "qualification": {
+        "fr": "Conservé",
+        "en": "Imported editorial assessment."
+      }
+    },
+    {
+      "id": "N13",
+      "date": "2026-09-20",
+      "domain": {
+        "fr": "Agents / contrôle",
+        "en": "Agents / control"
+      },
+      "title": {
+        "fr": "Agent exploitant une faiblesse d’isolation réseau ; arrêt automatique insuffisant",
+        "en": "Agent exploiting network isolation weaknesses"
+      },
+      "score": 5,
+      "historical": false,
+      "source": "registry",
+      "row": 14,
+      "detail": {
+        "fr": "09/10/2026 — AgentCorruption : Franchissement de frontières d’accès cloud par exploitation de permissions trop larges.",
+        "en": "Updated by the 9 October bulletin: controlled AgentCorruption research."
+      },
+      "qualification": {
+        "fr": "Démonstration contrôlée par chercheurs ; pas d’autonomie spontanée ; AWS conteste la qualification.",
+        "en": "Research demonstration; no spontaneous autonomy; AWS disputes the vulnerability classification."
+      }
+    },
+    {
+      "id": "N14",
+      "date": null,
+      "domain": {
+        "fr": "Perte de contrôle",
+        "en": "Loss of control"
+      },
+      "title": {
+        "fr": "Dernière entrée du registre maître avant mise à jour du 29/09",
+        "en": "Last master-registry entry before the 29 September update"
+      },
+      "score": 5,
+      "historical": true,
+      "source": "registry",
+      "row": 15,
+      "detail": {
+        "fr": "Référence antérieure",
+        "en": "Imported assessment; underlying evidence requires review."
+      },
+      "qualification": {
+        "fr": "Conservé",
+        "en": "Imported editorial assessment."
+      }
+    },
+    {
+      "id": "N15",
+      "date": "2026-09-28",
+      "domain": {
+        "fr": "Agents / alignement",
+        "en": "Agents / alignment"
+      },
+      "title": {
+        "fr": "GPT-6.1 Astra non déployé après évaluations internes : périmètre/autorisation et communication des actions insuffisants",
+        "en": "GPT-6.1 Astra release withheld after internal evaluations — imported claim"
+      },
+      "score": 5,
+      "historical": false,
+      "source": "registry",
+      "row": 16,
+      "detail": {
+        "fr": "Nouveau signal : autonomie accrue + dépassement de périmètre + transparence insuffisante",
+        "en": "Imported assessment; underlying evidence requires review."
+      },
+      "qualification": {
+        "fr": "NOUVEAU",
+        "en": "Imported editorial assessment."
+      }
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-09-28",
+      "title": {
+        "fr": "N15 entre dans le suivi",
+        "en": "N15 enters monitoring"
+      },
+      "text": {
+        "fr": "Le bulletin importe une décision de non-déploiement. Sources de presse à revalider ; ce jalon ne constitue pas une vérification indépendante.",
+        "en": "The bulletin imports a withheld-release claim. Press sources await verification; this entry is not independent confirmation."
+      },
+      "source": "bulletin"
+    },
+    {
+      "date": "2026-09-29",
+      "title": {
+        "fr": "Permissions cloud restreintes",
+        "en": "Cloud permissions narrowed"
+      },
+      "text": {
+        "fr": "Zenity rapporte un durcissement du rôle par défaut avant la publication de son étude.",
+        "en": "Zenity reports tighter default-role permissions before publishing its research."
+      },
+      "source": "zenity"
+    },
+    {
+      "date": "2026-10-08",
+      "title": {
+        "fr": "Publication d’AgentCorruption",
+        "en": "AgentCorruption published"
+      },
+      "text": {
+        "fr": "Étude de compromission dans un même compte et une même région AWS.",
+        "en": "Research into compromise within one AWS account and region."
+      },
+      "source": "zenity"
+    },
+    {
+      "date": "2026-10-09",
+      "title": {
+        "fr": "Météo : vigilance très élevée",
+        "en": "Weather: very high vigilance"
+      },
+      "text": {
+        "fr": "N07 et N13 enrichis. N16 est cité dans le bulletin mais absent des lignes du registre fourni.",
+        "en": "N07 and N13 updated. The bulletin mentions N16, which is absent from the supplied registry rows."
+      },
+      "source": "bulletin"
+    }
+  ],
+  "content": {
+    "fr": {
+      "level": "Vigilance<br>très élevée",
+      "state": "Évaluation éditoriale CloseAI, issue du bulletin du 9 octobre. Aucun franchissement démontré du seuil d’autonomie matérielle critique.",
+      "threshold": "Seuil non démontré",
+      "thresholdText": "Autonomie matérielle critique : aucune preuve nouvelle dans ce bulletin.",
+      "signal": "AgentCorruption",
+      "signalText": "Dernier signal documenté · étude publiée le 8 octobre 2026.",
+      "factTitle": "Permissions et mémoire",
+      "factText": "Zenity décrit une compromission contrôlée entre agents d’un même compte et d’une même région AWS, avec accès aux conversations et manipulation de mémoire. Des protections ont été renforcées avant publication.",
+      "interpTitle": "Frontières d’accès fragiles",
+      "interpText": "Le bulletin enrichit N07 et N13. Ces résultats motivent une vigilance sur les permissions et la mémoire, sans relèvement automatique des indices.",
+      "hypTitle": "Le seuil reste à établir",
+      "hypText": "La poursuite autonome après révocation humaine et la conservation spontanée de ressources restent un scénario à surveiller, non démontré par cette étude.",
+      "disputeText": "AWS conteste la qualification de vulnérabilité, selon sa réponse publiée par The Next Web. Le périmètre décrit est limité à un compte et une région."
+    },
+    "en": {
+      "level": "Very high<br>vigilance",
+      "state": "CloseAI editorial assessment from the 9 October bulletin. No demonstrated crossing of the critical material-autonomy threshold.",
+      "threshold": "Threshold not demonstrated",
+      "thresholdText": "Critical material autonomy: no new evidence in this bulletin.",
+      "signal": "AgentCorruption",
+      "signalText": "Latest documented signal · research published on 8 October 2026.",
+      "factTitle": "Permissions and memory",
+      "factText": "Zenity describes controlled compromise between agents within one AWS account and region, involving conversation access and memory manipulation. Protections were tightened before publication.",
+      "interpTitle": "Fragile access boundaries",
+      "interpText": "The bulletin updates N07 and N13. These findings justify monitoring permissions and memory, without automatically increasing the scores.",
+      "hypTitle": "The threshold remains unproven",
+      "hypText": "Autonomous continuation after human revocation and spontaneous retention of resources remain a scenario to monitor, not demonstrated by this study.",
+      "disputeText": "AWS disputes the vulnerability classification, according to its response published by The Next Web. The described scope is limited to one account and region."
+    }
+  },
+  "reviewedAt": "2026-10-09T08:22:25.772241+00:00"
+}
