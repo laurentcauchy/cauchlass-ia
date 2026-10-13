@@ -30,6 +30,17 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
+      - name: Stamp Laurent approval time
+        run: |
+          python - <<'PY'
+          import json, datetime
+          from pathlib import Path
+          p = Path('site/data/bulletin.json')
+          d = json.loads(p.read_text(encoding='utf-8'))
+          d['reviewer'] = 'Laurent'
+          d['reviewedAt'] = datetime.datetime.now(datetime.timezone.utc).isoformat()
+          p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
       - run: python scripts/validate.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
