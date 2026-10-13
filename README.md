@@ -28,7 +28,7 @@ N16 est cité mais absent du registre fourni : aucun nouvel indice ajouté. Le s
 
 ## Mise à jour quotidienne à partir de la veille de 8 h
 
-**État : mécanisme local prêt ; veille, génération du bulletin et publication automatique non reliées.** Aucune configuration locale de la veille existante n’a été retrouvée. Il faut retrouver sa tâche de 8 h et son emplacement de sortie ; ne pas en créer une seconde par défaut.
+**État : publication GitHub reliée à une validation explicite par e-mail ; veille et génération quotidienne encore à raccorder.** Une publication n’est autorisée qu’après réponse de Laurent au mail récapitulatif de mise à jour. La veille de 8 h reste à relier proprement au générateur de candidat.
 
 1. La veille existante de **8 h Europe/Paris** recherche les nouveaux éléments et produit un candidat complet au format de `site/data/bulletin.json`, plus ses documents sources. L’heure doit rester liée à Europe/Paris pour suivre l’heure d’été ; elle ne garantit pas une publication à 8 h.
 2. Vérifier les liens et distinguer faits, interprétation, hypothèse, désaccord et limites. Garder les indices précédents s’il n’y a pas de justification. Traduire tous les champs et conserver l’historique. Sans nouveau bulletin vérifié, ne pas modifier la date de fraîcheur.
