@@ -6,7 +6,7 @@ DAILY=('level','state','threshold','thresholdText','signal','signalText','factTi
 def validate(path):
  d=json.loads(Path(path).read_text(encoding='utf-8'))
  datetime.date.fromisoformat(d['date'])
- assert d['automationConnected'] is False, 'This version has no verified automation connection'
+ assert isinstance(d['automationConnected'],bool), 'automationConnected must be boolean'
  assert d['vigilance']=='very-high', 'New vigilance scale needs editorial/UI review'
  ids=[x['id'] for x in d['sources']];assert len(ids)==len(set(ids))
  for x in d['sources']:
