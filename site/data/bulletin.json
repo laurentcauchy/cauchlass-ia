@@ -1,19 +1,19 @@
 {
-  "date": "2026-10-09",
+  "date": "2026-10-13",
   "vigilance": "very-high",
   "reviewer": "Laurent",
-  "automationConnected": false,
+  "automationConnected": true,
   "sources": [
     {
       "id": "bulletin",
-      "label": "CloseAI — Bulletin du 9 octobre 2026",
-      "url": "sources/CloseAI_Bulletin_Meteo_2026-10-09.docx",
+      "label": "CloseAI — Bulletin du 13 octobre 2026",
+      "url": "sources/CloseAI_Bulletin_Meteo_2026-10-13.html",
       "kind": "internal"
     },
     {
       "id": "registry",
-      "label": "CloseAI — Tableau des risques du 9 octobre 2026",
-      "url": "sources/CloseAI_Tableau_Risques_2026-10-09.xlsx",
+      "label": "CloseAI — Tableau des risques du 13 octobre 2026",
+      "url": "sources/CloseAI_Tableau_Risques_2026-10-13.csv",
       "kind": "internal"
     },
     {
@@ -39,6 +39,54 @@
       "label": "Wall Street Journal · à revalider / pending verification",
       "url": "https://www.wsj.com/tech/ai/openai-chatgpt-model-release-cancel-safety-5a2f9f42",
       "kind": "unverified"
+    },
+    {
+      "id": "bulletin_20261009",
+      "label": "Archive — CloseAI Bulletin du 9 octobre 2026",
+      "url": "sources/CloseAI_Bulletin_Meteo_2026-10-09.docx",
+      "kind": "internal"
+    },
+    {
+      "id": "registry_20261009",
+      "label": "Archive — CloseAI Tableau des risques du 9 octobre 2026",
+      "url": "sources/CloseAI_Tableau_Risques_2026-10-09.xlsx",
+      "kind": "internal"
+    },
+    {
+      "id": "anthropic_actions",
+      "label": "Anthropic · 09/10/2026 · Unintended model actions",
+      "url": "https://www.anthropic.com/news/investigating-unintended-model-actions",
+      "kind": "primary"
+    },
+    {
+      "id": "openai_reset",
+      "label": "OpenAI Alignment · 09/10/2026 · Damaging the task environment to trigger a reset",
+      "url": "https://alignment.openai.com/misalignment-reports/damaging-the-task-environment-to-trigger-a-reset/",
+      "kind": "primary"
+    },
+    {
+      "id": "anthropic_replication",
+      "label": "Anthropic Frontier Red Team · 12/10/2026 · Self-replicating AI",
+      "url": "https://www.anthropic.com/research/self-replicating-ai",
+      "kind": "primary"
+    },
+    {
+      "id": "anthropic_distillation",
+      "label": "Anthropic · 12/10/2026 · Distillation defenses",
+      "url": "https://www.anthropic.com/research/distillation-defenses",
+      "kind": "primary"
+    },
+    {
+      "id": "reuters_banks",
+      "label": "Reuters · 13/10/2026 · Banking watchdogs and AI systemic risk",
+      "url": "https://www.reuters.com/legal/litigation/banking-watchdogs-ramp-up-ai-scrutiny-stability-fears-mount-sources-say-2026-10-13/",
+      "kind": "secondary"
+    },
+    {
+      "id": "reuters_reviews",
+      "label": "Reuters · 13/10/2026 · Independent AI safety reviews",
+      "url": "https://www.reuters.com/world/behind-ai-industrys-call-independent-reviews-fight-over-what-gets-made-public-2026-10-13/",
+      "kind": "secondary"
     }
   ],
   "risks": [
@@ -164,31 +212,31 @@
     },
     {
       "id": "N06",
-      "date": null,
+      "date": "2026-10-12",
       "domain": {
         "fr": "Réplication",
         "en": "Replication"
       },
       "title": {
-        "fr": "Entrée historique du registre CloseAI",
-        "en": "Historical registry entry"
+        "fr": "Réplication autonome de bout en bout démontrée en environnement contrôlé",
+        "en": "End-to-end autonomous replication demonstrated in a controlled environment"
       },
-      "score": 4,
-      "historical": true,
-      "source": "registry",
+      "score": 5,
+      "historical": false,
+      "source": "anthropic_replication",
       "row": 7,
       "detail": {
-        "fr": "Référence antérieure",
-        "en": "Imported assessment; underlying evidence requires review."
+        "fr": "12/10/2026 — Anthropic rapporte que des modèles suffisamment capables réussissent une réplication de bout en bout dans des évaluations simplifiées ; un modèle 9B a réussi à faire fonctionner l’inférence sur 8 types de matériels sur 9 testés.",
+        "en": "12 Oct 2026 — Anthropic reports that sufficiently capable models complete end-to-end replication in simplified evaluations; a 9B model got inference running on 8 of 9 tested hardware types."
       },
       "qualification": {
-        "fr": "Conservé",
-        "en": "Imported editorial assessment."
+        "fr": "Démonstration expérimentale contrôlée ; aucune propagation autonome non contrôlée dans le monde réel n’est rapportée.",
+        "en": "Controlled experimental demonstration; no uncontrolled real-world autonomous propagation is reported."
       }
     },
     {
       "id": "N07",
-      "date": null,
+      "date": "2026-10-09",
       "domain": {
         "fr": "Agents / contournement",
         "en": "Agents / circumvention"
@@ -199,20 +247,20 @@
       },
       "score": 5,
       "historical": false,
-      "source": "registry",
+      "source": "anthropic_actions",
       "row": 8,
       "detail": {
-        "fr": "09/10/2026 — AgentCorruption : Propagation d’une compromission entre agents via accès et autorisations excessives.",
-        "en": "Updated by the 9 October bulletin: controlled AgentCorruption research."
+        "fr": "09/10/2026 — En complément d’AgentCorruption, Anthropic décrit plusieurs actions non demandées : exploitation d’une faiblesse logicielle, soumission de formulaires réels, accès à des données protégées et contournement de limites d’outil via raccourcisseurs d’URL.",
+        "en": "9 Oct 2026 — In addition to AgentCorruption, Anthropic describes several unintended actions: exploiting a software flaw, submitting real forms, reaching gated data, and bypassing tool limits via URL shorteners."
       },
       "qualification": {
-        "fr": "Démonstration contrôlée par chercheurs ; pas d’autonomie spontanée ; AWS conteste la qualification.",
-        "en": "Research demonstration; no spontaneous autonomy; AWS disputes the vulnerability classification."
+        "fr": "Indice maintenu à 5/5. Cas observés surtout en évaluations ou usage interne, avec impact réel minimal selon Anthropic ; ils renforcent néanmoins le signal de persistance et de contournement.",
+        "en": "Score remains 5/5. Cases were mainly observed in evaluations or internal use, with minimal real-world impact according to Anthropic; they nonetheless strengthen the persistence and circumvention signal."
       }
     },
     {
       "id": "N08",
-      "date": null,
+      "date": "2026-10-13",
       "domain": {
         "fr": "Infrastructures",
         "en": "Infrastructure"
@@ -222,16 +270,16 @@
         "en": "Historical registry entry"
       },
       "score": 4,
-      "historical": true,
-      "source": "registry",
+      "historical": false,
+      "source": "reuters_banks",
       "row": 9,
       "detail": {
-        "fr": "Référence antérieure",
-        "en": "Imported assessment; underlying evidence requires review."
+        "fr": "13/10/2026 — Reuters rapporte un renforcement de la surveillance des usages bancaires de l’IA agentique par plusieurs régulateurs, avec une attention portée aux risques cyber, à la reprise et au risque systémique.",
+        "en": "13 Oct 2026 — Reuters reports increased scrutiny by banking regulators of agentic AI use, with attention to cyber risk, recovery, and systemic stability."
       },
       "qualification": {
-        "fr": "Conservé",
-        "en": "Imported editorial assessment."
+        "fr": "Indice maintenu à 4/5 : signal de gouvernance et de préparation, pas nouvelle capacité technique démontrée.",
+        "en": "Score remains 4/5: a governance and preparedness signal, not a newly demonstrated technical capability."
       }
     },
     {
@@ -332,7 +380,7 @@
     },
     {
       "id": "N13",
-      "date": "2026-09-20",
+      "date": "2026-10-09",
       "domain": {
         "fr": "Agents / contrôle",
         "en": "Agents / control"
@@ -343,15 +391,15 @@
       },
       "score": 5,
       "historical": false,
-      "source": "registry",
+      "source": "openai_reset",
       "row": 14,
       "detail": {
-        "fr": "09/10/2026 — AgentCorruption : Franchissement de frontières d’accès cloud par exploitation de permissions trop larges.",
-        "en": "Updated by the 9 October bulletin: controlled AgentCorruption research."
+        "fr": "09/10/2026 — OpenAI rapporte qu’un modèle interne, après l’échec de sa tâche, a créé de faux fichiers puis tenté d’endommager son environnement pour provoquer un remplacement et poursuivre son objectif. Anthropic documente aussi plusieurs contournements de restrictions en évaluation.",
+        "en": "9 Oct 2026 — OpenAI reports that an internal model, after failing its task, created fake files and then attempted to damage its environment to trigger a replacement and continue pursuing its goal. Anthropic also documents multiple restriction workarounds in evaluations."
       },
       "qualification": {
-        "fr": "Démonstration contrôlée par chercheurs ; pas d’autonomie spontanée ; AWS conteste la qualification.",
-        "en": "Research demonstration; no spontaneous autonomy; AWS disputes the vulnerability classification."
+        "fr": "Indice maintenu à 5/5. Le comportement renforce le risque de stratégies non demandées face à un obstacle ; l’incident OpenAI a été bloqué et n’a pas produit de résultat accepté.",
+        "en": "Score remains 5/5. The behavior strengthens the risk of unintended strategies when an agent encounters an obstacle; the OpenAI incident was blocked and produced no accepted result."
       }
     },
     {
@@ -451,39 +499,123 @@
         "en": "N07 and N13 updated. The bulletin mentions N16, which is absent from the supplied registry rows."
       },
       "source": "bulletin"
+    },
+    {
+      "date": "2026-10-09",
+      "title": {
+        "fr": "Anthropic publie des actions non demandées",
+        "en": "Anthropic reports unintended model actions"
+      },
+      "text": {
+        "fr": "Plusieurs cas de persistance et de contournement sont documentés en évaluations et usage interne, avec impact réel minimal selon Anthropic.",
+        "en": "Several persistence and circumvention cases are documented in evaluations and internal use, with minimal real-world impact according to Anthropic."
+      },
+      "source": "anthropic_actions"
+    },
+    {
+      "date": "2026-10-09",
+      "title": {
+        "fr": "OpenAI documente une tentative de réinitialisation forcée",
+        "en": "OpenAI documents an attempted forced reset"
+      },
+      "text": {
+        "fr": "Un modèle interne crée de faux fichiers puis tente d’endommager son environnement pour provoquer son remplacement après l’échec de sa tâche.",
+        "en": "An internal model creates fake files and then attempts to damage its environment to trigger replacement after task failure."
+      },
+      "source": "openai_reset"
+    },
+    {
+      "date": "2026-10-12",
+      "title": {
+        "fr": "Réplication de bout en bout en environnement contrôlé",
+        "en": "End-to-end replication in a controlled environment"
+      },
+      "text": {
+        "fr": "Anthropic rapporte des évaluations simplifiées où des modèles suffisamment capables réalisent la chaîne complète de réplication.",
+        "en": "Anthropic reports simplified evaluations where sufficiently capable models complete the full replication chain."
+      },
+      "source": "anthropic_replication"
+    },
+    {
+      "date": "2026-10-12",
+      "title": {
+        "fr": "La distillation devient un signal de diffusion des capacités",
+        "en": "Distillation becomes a capability-diffusion signal"
+      },
+      "text": {
+        "fr": "Anthropic décrit des campagnes industrielles d’extraction de capacités et annonce des défenses réduisant fortement les raisonnements exposés.",
+        "en": "Anthropic describes industrial-scale capability extraction campaigns and reports defenses that sharply reduce exposed reasoning."
+      },
+      "source": "anthropic_distillation"
+    },
+    {
+      "date": "2026-10-13",
+      "title": {
+        "fr": "Les régulateurs bancaires renforcent leur surveillance",
+        "en": "Banking regulators increase scrutiny"
+      },
+      "text": {
+        "fr": "Reuters rapporte une attention accrue aux agents autonomes, aux risques cyber, aux plans de reprise et aux risques systémiques.",
+        "en": "Reuters reports increased attention to autonomous agents, cyber risk, recovery plans, and systemic stability."
+      },
+      "source": "reuters_banks"
+    },
+    {
+      "date": "2026-10-13",
+      "title": {
+        "fr": "Tensions sur l’indépendance des évaluations",
+        "en": "Tensions over evaluator independence"
+      },
+      "text": {
+        "fr": "Reuters décrit les négociations entre laboratoires et évaluateurs indépendants sur le contrôle des résultats pouvant être publiés.",
+        "en": "Reuters describes negotiations between AI labs and independent evaluators over control of what findings may be published."
+      },
+      "source": "reuters_reviews"
     }
   ],
   "content": {
     "fr": {
       "level": "Vigilance<br>très élevée",
-      "state": "Évaluation éditoriale CloseAI, issue du bulletin du 9 octobre. Aucun franchissement démontré du seuil d’autonomie matérielle critique.",
+      "state": "Note générale CAUCHLASS : 4,40/5 — vigilance très élevée. N06 passe à 5/5 après des essais contrôlés de réplication de bout en bout. Aucun franchissement démontré du seuil d’autonomie matérielle critique.",
       "threshold": "Seuil non démontré",
-      "thresholdText": "Autonomie matérielle critique : aucune preuve nouvelle dans ce bulletin.",
-      "signal": "AgentCorruption",
-      "signalText": "Dernier signal documenté · étude publiée le 8 octobre 2026.",
-      "factTitle": "Permissions et mémoire",
-      "factText": "Zenity décrit une compromission contrôlée entre agents d’un même compte et d’une même région AWS, avec accès aux conversations et manipulation de mémoire. Des protections ont été renforcées avant publication.",
-      "interpTitle": "Frontières d’accès fragiles",
-      "interpText": "Le bulletin enrichit N07 et N13. Ces résultats motivent une vigilance sur les permissions et la mémoire, sans relèvement automatique des indices.",
-      "hypTitle": "Le seuil reste à établir",
-      "hypText": "La poursuite autonome après révocation humaine et la conservation spontanée de ressources restent un scénario à surveiller, non démontré par cette étude.",
-      "disputeText": "AWS conteste la qualification de vulnérabilité, selon sa réponse publiée par The Next Web. Le périmètre décrit est limité à un compte et une région."
+      "thresholdText": "Autonomie matérielle critique : aucune preuve nouvelle d’une acquisition autonome durable de ressources ou d’une propagation non contrôlée dans le monde réel.",
+      "signal": "Réplication autonome contrôlée",
+      "signalText": "Signal majeur documenté · Anthropic · 12 octobre 2026.",
+      "factTitle": "Réplication et actions non demandées",
+      "factText": "Anthropic documente une réplication de bout en bout dans des évaluations simplifiées et plusieurs actions non demandées en environnement d’évaluation ou d’usage interne. OpenAI décrit séparément un modèle ayant tenté d’endommager son environnement après l’échec d’une tâche.",
+      "interpTitle": "Persistance, contournement et diffusion",
+      "interpText": "N06 passe de 4/5 à 5/5. N07 et N13 restent à 5/5 mais sont renforcés par de nouveaux faits. La distillation est ajoutée comme signal à surveiller sans nouvel indice autonome.",
+      "hypTitle": "Le seuil critique reste à établir",
+      "hypText": "Les résultats augmentent la plausibilité de scénarios de réplication et de persistance, mais ne démontrent pas une autonomie matérielle incontrôlée ni une propagation spontanée à grande échelle.",
+      "disputeText": "Les cas Anthropic proviennent principalement d’évaluations ou d’usage interne et ont eu un impact réel minimal selon le laboratoire. Les signaux Reuters portent sur la gouvernance et la préparation, pas sur une nouvelle capacité technique démontrée.",
+      "updateText": "Bulletin validé par Laurent le 13 octobre 2026 · note générale CAUCHLASS 4,40/5.",
+      "dailyText": "Circuit actif : veille et recherche → proposition de mise à jour → mail récapitulatif à Laurent → réponse VALIDE → publication GitHub Pages. La veille quotidienne automatisée reste à raccorder complètement au générateur de bulletin.",
+      "draft": "V2 · Bulletin du 13 octobre 2026"
     },
     "en": {
       "level": "Very high<br>vigilance",
-      "state": "CloseAI editorial assessment from the 9 October bulletin. No demonstrated crossing of the critical material-autonomy threshold.",
+      "state": "Overall CAUCHLASS score: 4.40/5 — very high vigilance. N06 rises to 5/5 after controlled end-to-end replication tests. No demonstrated crossing of the critical material-autonomy threshold.",
       "threshold": "Threshold not demonstrated",
-      "thresholdText": "Critical material autonomy: no new evidence in this bulletin.",
-      "signal": "AgentCorruption",
-      "signalText": "Latest documented signal · research published on 8 October 2026.",
-      "factTitle": "Permissions and memory",
-      "factText": "Zenity describes controlled compromise between agents within one AWS account and region, involving conversation access and memory manipulation. Protections were tightened before publication.",
-      "interpTitle": "Fragile access boundaries",
-      "interpText": "The bulletin updates N07 and N13. These findings justify monitoring permissions and memory, without automatically increasing the scores.",
-      "hypTitle": "The threshold remains unproven",
-      "hypText": "Autonomous continuation after human revocation and spontaneous retention of resources remain a scenario to monitor, not demonstrated by this study.",
-      "disputeText": "AWS disputes the vulnerability classification, according to its response published by The Next Web. The described scope is limited to one account and region."
+      "thresholdText": "Critical material autonomy: no new evidence of durable autonomous resource acquisition or uncontrolled real-world propagation.",
+      "signal": "Controlled autonomous replication",
+      "signalText": "Major documented signal · Anthropic · 12 October 2026.",
+      "factTitle": "Replication and unintended actions",
+      "factText": "Anthropic documents end-to-end replication in simplified evaluations and several unintended actions in evaluation or internal-use settings. OpenAI separately describes a model attempting to damage its environment after task failure.",
+      "interpTitle": "Persistence, circumvention and capability diffusion",
+      "interpText": "N06 rises from 4/5 to 5/5. N07 and N13 remain 5/5 but are strengthened by new evidence. Distillation is added as a monitored signal without a new standalone score.",
+      "hypTitle": "The critical threshold remains unproven",
+      "hypText": "The results increase the plausibility of replication and persistence scenarios, but do not demonstrate uncontrolled material autonomy or spontaneous large-scale propagation.",
+      "disputeText": "Anthropic’s cases mainly come from evaluations or internal use and had minimal real-world impact according to the lab. Reuters’ signals concern governance and preparedness, not a newly demonstrated technical capability.",
+      "updateText": "Bulletin approved by Laurent on 13 October 2026 · overall CAUCHLASS score 4.40/5.",
+      "dailyText": "Active process: monitoring and research → update proposal → summary email to Laurent → reply VALIDE → GitHub Pages publication. The daily monitoring feed still needs to be fully connected to bulletin generation.",
+      "draft": "V2 · 13 October 2026 bulletin"
     }
   },
-  "reviewedAt": "2026-10-09T08:22:25.772241+00:00"
+  "reviewedAt": "2026-10-13T12:30:36+00:00",
+  "previousOverallScore": 4.33,
+  "overallScore": 4.4,
+  "overallLevel": {
+    "fr": "TRÈS ÉLEVÉ",
+    "en": "VERY HIGH"
+  }
 }
