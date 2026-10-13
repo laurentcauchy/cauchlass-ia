@@ -1,5 +1,11 @@
 name: Publish approved CAUCHLASS IA edition
+
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'site/**'
   workflow_dispatch:
     inputs:
       approval:
@@ -7,14 +13,17 @@ on:
         required: true
         type: boolean
         default: false
+
 permissions:
   contents: read
+
 concurrency:
   group: pages
   cancel-in-progress: false
+
 jobs:
   build:
-    if: ${{ inputs.approval == true }}
+    if: ${{ (github.event_name == 'workflow_dispatch' && inputs.approval == true) || (github.event_name == 'push' && contains(github.event.head_commit.message, '[APPROVED-LAURENT]')) }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -26,6 +35,7 @@ jobs:
       - uses: actions/upload-pages-artifact@v4
         with:
           path: site
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
