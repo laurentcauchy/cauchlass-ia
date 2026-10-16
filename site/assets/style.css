@@ -18,3 +18,24 @@
 .risk-average-line{position:absolute;left:0;right:0;border-top:3px solid #146c7c;z-index:3;pointer-events:none}
 .risk-average-line span{position:absolute;right:2px;top:-28px;background:#146c7c;color:white;font-size:11px;font-weight:700;padding:2px 6px;border-radius:3px}
 @media(max-width:700px){.evolution-head{align-items:stretch}.evolution-average{justify-content:space-between}.evolution-average span{font-size:26px}.risk-chart-card{padding:14px}.risk-chart-grid{min-width:520px;height:220px}}
+
+/* CAUCHLASS IA — page d'accueil épurée / simple landing page */
+.landing{max-width:1000px;margin:0 auto}
+.landing-intro{text-align:center;display:flex;flex-direction:column;align-items:center;padding:28px 0 34px}
+.landing-logo{display:block;width:clamp(108px,13vw,156px);height:auto;aspect-ratio:1;object-fit:cover;border-radius:27px;box-shadow:0 10px 30px #183d3918;margin-bottom:26px}
+.landing-intro h1{max-width:790px;margin:15px 0 19px;font-size:clamp(38px,5vw,66px);line-height:1.09}
+.landing-intro .lead{margin:0 auto;max-width:650px;font-size:18px}
+.landing-heading{display:flex;align-items:baseline;justify-content:space-between;gap:15px;margin:14px 0 18px}
+.landing-heading h2{font-size:26px;margin:0}
+.landing-heading p{font-size:14px;color:var(--muted);margin:0}
+.landing-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.landing-link{display:flex;align-items:flex-start;gap:16px;padding:24px 22px;background:var(--white);border:1px solid var(--line);border-radius:10px;text-decoration:none;min-height:138px;transition:border-color .2s ease,transform .2s ease,box-shadow .2s ease}
+.landing-link:hover{border-color:var(--orange);transform:translateY(-2px);box-shadow:0 8px 20px #183d390e}
+.landing-number{color:var(--orange);font-size:13px;letter-spacing:1px;font-weight:700;line-height:1.65;flex:0 0 auto}
+.landing-link-body{display:flex;flex-direction:column;gap:8px;flex:1}
+.landing-link-body strong{font:500 23px/1.25 Georgia,serif;color:var(--ink)}
+.landing-link-body>span{color:var(--muted);font-size:14px;line-height:1.5}
+.landing-arrow{color:var(--orange);font-size:22px;line-height:1}
+.landing-footnote{text-align:center;color:var(--muted);font-size:13px;margin:30px 0 0}
+@media(max-width:700px){.landing-intro{padding:10px 0 27px}.landing-logo{border-radius:22px;margin-bottom:20px}.landing-intro h1{font-size:clamp(36px,9vw,49px)}.landing-intro .lead{font-size:16px}.landing-heading{display:block;margin-top:6px}.landing-heading h2{font-size:23px}.landing-heading p{margin-top:4px}.landing-links{grid-template-columns:1fr;gap:12px}.landing-link{min-height:104px;padding:19px 16px;gap:12px}.landing-link-body strong{font-size:21px}.landing-footnote{margin-top:23px}}
+@media(prefers-reduced-motion:reduce){.landing-link{transition:none}}
