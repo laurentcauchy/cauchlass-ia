@@ -37,10 +37,11 @@ return `<div class="landing">
 <span class="eyebrow">CAUCHLASS IA · CloseAI</span>
 <h1>${fr?'Comprendre les risques de l’IA.':'Understanding AI risks.'}</h1>
 <p class="lead">${fr?'Un observatoire indépendant pour suivre les faits, mesurer les évolutions et éclairer le contrôle humain.':'An independent observatory tracking evidence, assessing developments and supporting human oversight.'}</p>
+<div class="landing-approval">${approvalStamp()}</div>
 </div>
 <div class="landing-heading"><h2>${fr?'Découvrir notre observatoire':'Explore our observatory'}</h2><p>${fr?'Choisissez une rubrique':'Choose a section'}</p></div>
 <div class="landing-links">${items.map(([route,num,title,description])=>`<a class="landing-link" href="#${route}"><span class="landing-number">${num}</span><span class="landing-link-body"><strong>${e(title)}</strong><span>${e(description)}</span></span><span class="landing-arrow" aria-hidden="true">↗</span></a>`).join('')}</div>
-<p class="landing-footnote">${fr?'Dernière édition validée':'Last approved edition'} : ${approvedDate()}. ${fr?'Les données sont publiées après validation humaine.':'Updates are published after human approval.'}</p>
+<p class="landing-footnote">${fr?'Les données sont publiées après validation humaine.':'Updates are published after human approval.'}</p>
 </div>`;
 }
 function meteo(){return `${dateline()}${notices()}<div class="two"><div class="page-intro"><span class="eyebrow">${t('analysis')}</span><h1>${t('weather')}</h1><p class="lead">${t('meteoIntro')}</p><p class="notice">${t('disputeText')}</p><div class="actions">${source('tnw')}</div></div>${weather()}</div><section>${cards()}</section><section class="two"><article><h2>${t('method')}</h2><p>${t('methodText')}</p><p class="notice">${t('unverified')}</p></article><article class="panel"><h2>${t('daily')}</h2><p>${t('dailyText')}</p><a href="sources/CloseAI_Bulletin_Meteo_2026-10-13.html">${t('download')} ↓</a></article></section>${sources()}`}
