@@ -39,3 +39,9 @@
 .landing-footnote{text-align:center;color:var(--muted);font-size:13px;margin:30px 0 0}
 @media(max-width:700px){.landing-intro{padding:10px 0 27px}.landing-logo{border-radius:22px;margin-bottom:20px}.landing-intro h1{font-size:clamp(36px,9vw,49px)}.landing-intro .lead{font-size:16px}.landing-heading{display:block;margin-top:6px}.landing-heading h2{font-size:23px}.landing-heading p{margin-top:4px}.landing-links{grid-template-columns:1fr;gap:12px}.landing-link{min-height:104px;padding:19px 16px;gap:12px}.landing-link-body strong{font-size:21px}.landing-footnote{margin-top:23px}}
 @media(prefers-reduced-motion:reduce){.landing-link{transition:none}}
+
+/* Confirmation visible de la dernière édition approuvée */
+.landing-approval{margin-top:24px;display:flex;justify-content:center;width:100%}
+.landing-approval .approval-stamp{margin:0;padding:12px 18px;border-left:4px solid var(--orange);display:flex;justify-content:center;align-items:center;gap:10px;max-width:100%;text-align:left}
+.landing-approval .approval-stamp span:last-child{white-space:nowrap}
+@media(max-width:700px){.landing-approval{margin-top:20px}.landing-approval .approval-stamp{justify-content:flex-start;padding:12px 14px;gap:8px;font-size:12px}.landing-approval .approval-stamp strong{flex:1}.landing-approval .approval-stamp span:last-child{font-size:12px}}
