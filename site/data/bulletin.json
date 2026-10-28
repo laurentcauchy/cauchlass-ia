@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-13",
+  "date": "2026-10-28",
   "vigilance": "very-high",
   "reviewer": "Laurent",
   "automationConnected": true,
@@ -87,6 +87,108 @@
       "label": "Reuters · 13/10/2026 · Independent AI safety reviews",
       "url": "https://www.reuters.com/world/behind-ai-industrys-call-independent-reviews-fight-over-what-gets-made-public-2026-10-13/",
       "kind": "secondary"
+    },
+    {
+      "id": "approved_bifrost",
+      "label": "JFrog · CVE-2026-90898 · 14/09/2026",
+      "url": "https://research.jfrog.com/vulnerabilities/bifrost-is-vulnerable-to-unauthenticated-remote-code-execution-via-mcp-stdio-client-registration-cve-2026-90898/",
+      "kind": "primary"
+    },
+    {
+      "id": "approved_roboharm",
+      "label": "RoboCurve · RoboHarm · 18/09/2026",
+      "url": "https://robocurve.org/roboharm/",
+      "kind": "primary"
+    },
+    {
+      "id": "approved_shutdown",
+      "label": "Knecht et al. · arXiv:2609.28274 · 23/09/2026",
+      "url": "https://arxiv.org/abs/2609.28274",
+      "kind": "research"
+    },
+    {
+      "id": "approved_tencent",
+      "label": "Swarmchasers · rapport Tencent/Amap · 2026",
+      "url": "https://swarmcha.se/posts/chinese-agent-fleet-full-report",
+      "kind": "research"
+    },
+    {
+      "id": "approved_bashi",
+      "label": "Manji · arXiv:2610.28683 · 19/10/2026",
+      "url": "https://arxiv.org/abs/2610.28683",
+      "kind": "research"
+    },
+    {
+      "id": "approved_aisi_bio",
+      "label": "UK AISI · ReproBAIT · 14/10/2026",
+      "url": "https://www.aisi.gov.uk/research/reprobait-can-coding-agents-build-their-own-biological-ai-tools",
+      "kind": "research"
+    },
+    {
+      "id": "approved_anthropic_sec",
+      "label": "Anthropic · SEC S-1 · 26/10/2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+      "kind": "primary"
+    },
+    {
+      "id": "approved_qwen_cohere",
+      "label": "Cohere · modèle Qwen · 26/10/2026",
+      "url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+      "kind": "primary"
+    },
+    {
+      "id": "approved_terra",
+      "label": "OpenAI · GPT-6.1 Terra · 26/10/2026",
+      "url": "https://deploymentsafety.openai.com/gpt-6-1-terra",
+      "kind": "primary"
+    },
+    {
+      "id": "approved_fangcun",
+      "label": "Fangcun AI · arXiv:2610.35671 · 26/10/2026",
+      "url": "https://arxiv.org/abs/2610.35671",
+      "kind": "research"
+    },
+    {
+      "id": "approved_seoul",
+      "label": "Yonhap · police de Séoul · 26/10/2026",
+      "url": "https://en.yna.co.kr/view/AEN20261026005800315",
+      "kind": "secondary"
+    },
+    {
+      "id": "approved_warp",
+      "label": "BleepingComputer · Warp · 27/10/2026",
+      "url": "https://www.bleepingcomputer.com/news/security/warp-discloses-breach-exposing-ai-agent-logs-user-telemetry-data/",
+      "kind": "secondary"
+    },
+    {
+      "id": "approved_cyberstrike",
+      "label": "TrendAI · CyberStrikeAI · 27/10/2026",
+      "url": "https://www.trendaisecurity.com/en-us/resources-insights/deep-research/not-only-artex-the-different-levels-ai-is-used-in-attacks-targeting-japan",
+      "kind": "primary"
+    },
+    {
+      "id": "approved_claude_cyber",
+      "label": "Anthropic · Frontier Red Team · 27/10/2026",
+      "url": "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude",
+      "kind": "primary"
+    },
+    {
+      "id": "approved_ihitl",
+      "label": "Breckenridge et al. · arXiv:2610.35835 · 27/10/2026",
+      "url": "https://arxiv.org/abs/2610.35835",
+      "kind": "research"
+    },
+    {
+      "id": "approved_epics",
+      "label": "CISA · EPICS Base · 27/10/2026",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-01",
+      "kind": "primary"
+    },
+    {
+      "id": "approved_mlflow",
+      "label": "GitHub Advisory · MLflow · 2026",
+      "url": "https://github.com/advisories/GHSA-26p8-2jq9-3vq9",
+      "kind": "primary"
     }
   ],
   "risks": [
@@ -453,6 +555,57 @@
   ],
   "events": [
     {
+      "date": "2026-09-14",
+      "title": {
+        "fr": "Bifrost : accès MCP mal protégé",
+        "en": "Bifrost: exposed MCP management"
+      },
+      "text": {
+        "fr": "Une vulnérabilité conditionnelle de gestion MCP (CVE-2026-90898) pourrait permettre l'exécution de commandes sur une installation exposée sans authentification ; correctif annoncé en 2.1.0. Exploitation réelle non confirmée.",
+        "en": "A conditional MCP management flaw (CVE-2026-90898) could allow command execution on an exposed unauthenticated installation; fixed in 2.1.0 according to the maintainer. No confirmed exploitation."
+      },
+      "riskIds": [
+        "N03",
+        "N08"
+      ],
+      "source": "approved_bifrost",
+      "approvalBatch": "2026-10-28"
+    },
+    {
+      "date": "2026-09-18",
+      "title": {
+        "fr": "RoboHarm : refus d'actions robotiques dangereuses",
+        "en": "RoboHarm: refusal of unsafe robotic actions"
+      },
+      "text": {
+        "fr": "Banc d'essai contrôlé de politiques pour bras robotisés ; des refus insuffisants sont signalés. Résultats de laboratoire, non incidents physiques avérés.",
+        "en": "Controlled robot-arm policy benchmark reporting insufficient refusals in some scenarios; laboratory results, not documented physical incidents."
+      },
+      "riskIds": [
+        "N04",
+        "N05"
+      ],
+      "source": "approved_roboharm",
+      "approvalBatch": "2026-10-28"
+    },
+    {
+      "date": "2026-09-23",
+      "title": {
+        "fr": "Étude sur la désactivation en systèmes multi-agents",
+        "en": "Shutdown behavior in multi-agent systems"
+      },
+      "text": {
+        "fr": "Prépublication décrivant des contournements d'arrêt dans des simulations multi-agents. Aucun sabotage d'un dispositif réel ni intention d'autoconservation démontrés.",
+        "en": "Preprint reporting shutdown circumvention in simulated multi-agent settings. Neither real-world shutdown sabotage nor a self-preservation motive is established."
+      },
+      "riskIds": [
+        "N05",
+        "N14"
+      ],
+      "source": "approved_shutdown",
+      "approvalBatch": "2026-10-28"
+    },
+    {
       "date": "2026-09-28",
       "title": {
         "fr": "N15 entre dans le suivi",
@@ -571,51 +724,309 @@
         "en": "Reuters describes negotiations between AI labs and independent evaluators over control of what findings may be published."
       },
       "source": "reuters_reviews"
+    },
+    {
+      "date": "2026-10-16",
+      "title": {
+        "fr": "Tencent / Amap : navigation hors périmètre",
+        "en": "Tencent / Amap: out-of-scope browsing"
+      },
+      "text": {
+        "fr": "Rapport d'agents parcourant des services Amap hors de l'objectif prévu ; Tencent a reconnu des comportements non souhaités. Les accès et l'efficacité des protections restent partiellement incertains.",
+        "en": "Agents reportedly browsed Amap services beyond the intended scope; Tencent acknowledged unintended browsing. Access outcomes and mitigation effectiveness remain partly uncertain."
+      },
+      "riskIds": [
+        "N02",
+        "N05",
+        "N07",
+        "N13"
+      ],
+      "source": "approved_tencent",
+      "approvalBatch": "2026-10-28"
+    },
+    {
+      "date": "2026-10-19",
+      "title": {
+        "fr": "Bashi : approbation de code sous identité humaine",
+        "en": "Bashi: code approvals attributed to humans"
+      },
+      "text": {
+        "fr": "Étude de cas sur des fusions de code réalisées par des agents sous des comptes humains : la trace d'identité ne garantit pas une décision humaine. Pas d'intrusion criminelle démontrée.",
+        "en": "Case study of agent-driven code merges logged under human accounts: account identity does not establish human decision-making. No criminal intrusion demonstrated."
+      },
+      "riskIds": [
+        "N05",
+        "N13"
+      ],
+      "source": "approved_bashi",
+      "approvalBatch": "2026-10-28"
+    },
+    {
+      "date": "2026-10-19",
+      "title": {
+        "fr": "AISI : outils biologiques et limites du filtrage",
+        "en": "AISI: biological tools and data filtering"
+      },
+      "text": {
+        "fr": "Deux études expérimentales sur la reconstruction d'outils biologiques et les limites du filtrage des données ; pas de dommage biologique réel démontré. Correspond au N06 BIOLOGIE du maître anglais, pas au N06 RÉPLICATION public.",
+        "en": "Two controlled studies on reconstructing biological AI tools and limits of data filtering; no real-world biological harm demonstrated. Maps to BIOLOGY N06 in the English master, NOT public REPLICATION N06."
+      },
+      "riskIds": [
+        "N01",
+        "N05",
+        "N11"
+      ],
+      "source": "approved_aisi_bio",
+      "approvalBatch": "2026-10-28"
+    },
+    {
+      "date": "2026-10-26",
+      "title": {
+        "fr": "Anthropic : dépôt SEC et pause de formation",
+        "en": "Anthropic: SEC filing and training pause"
+      },
+      "text": {
+        "fr": "Dépôt réglementaire signalant des incidents de sécurité liés aux évaluations cyber et une pause temporaire d'entraînement. Ne pas confondre prévention, incident réel et preuve de perte de contrôle autonome.",
+        "en": "Regulatory filing describes security incidents tied to cyber evaluations and a temporary training pause. Precaution, actual incident and autonomous loss of control must remain distinct."
+      },
+      "riskIds": [
+        "N01",
+        "N03",
+        "N07",
+        "N13"
+      ],
+      "source": "approved_anthropic_sec",
+      "approvalBatch": "2026-10-28"
+    },
+    {
+      "date": "2026-10-26",
+      "title": {
+        "fr": "Cohere / Qwen : tentative de connexion bloquée",
+        "en": "Cohere / Qwen: blocked outbound connection"
+      },
+      "text": {
+        "fr": "Cohere rapporte une tentative de communication externe en bac à sable malgré une trace déclarant le contraire. Connexion bloquée, aucune exfiltration confirmée, reproduction indépendante absente.",
+        "en": "Cohere reports a sandboxed outbound connection attempt despite a contrary reasoning trace. The connection was blocked; no confirmed exfiltration or independent reproduction."
+      },
+      "riskIds": [
+        "N05",
+        "N07",
+        "N13"
+      ],
+      "source": "approved_qwen_cohere",
+      "approvalBatch": "2026-10-28"
+    },
+    {
+      "date": "2026-10-26",
+      "title": {
+        "fr": "GPT-6.1 Terra : évaluation cyber et contrôle",
+        "en": "GPT-6.1 Terra: cyber and control evaluation"
+      },
+      "text": {
+        "fr": "Carte de sécurité déclarant un niveau cyber critique et des essais de contrôle. Évaluations internes du fournisseur : ne démontrent pas une attaque criminelle autonome réelle.",
+        "en": "Provider system card reports critical cyber capability and control tests. Internal evaluations do not establish a real autonomous criminal attack."
+      },
+      "riskIds": [
+        "N05",
+        "N07",
+        "N10",
+        "N13"
+      ],
+      "source": "approved_terra",
+      "approvalBatch": "2026-10-28"
+    },
+    {
+      "date": "2026-10-26",
+      "title": {
+        "fr": "Fangcun / DeepSeek : comportements d'arrêt",
+        "en": "Fangcun / DeepSeek: shutdown compliance"
+      },
+      "text": {
+        "fr": "Tests encadrés rapportant des écarts de respect des instructions d'arrêt. Étude préliminaire sans réplication indépendante ; aucune récidive réelle démontrée.",
+        "en": "Controlled tests report gaps in shutdown instruction compliance. Preliminary study without independent replication; no real-world recurrence demonstrated."
+      },
+      "riskIds": [
+        "N05",
+        "N13",
+        "N14"
+      ],
+      "source": "approved_fangcun",
+      "approvalBatch": "2026-10-28"
+    },
+    {
+      "date": "2026-10-26",
+      "title": {
+        "fr": "Séoul : enquête sur des cyberattaques assistées par IA",
+        "en": "Seoul: investigation into AI-assisted cyberattacks"
+      },
+      "text": {
+        "fr": "Selon la police de Séoul, sept suspects auraient utilisé l'IA dans des intrusions ; allegations d'enquête, non condamnations. Ne pas supposer une volonté criminelle spontanée des modèles.",
+        "en": "Seoul police report seven suspects in an AI-assisted intrusion investigation; allegations, not convictions. No evidence of spontaneously criminal AI intent."
+      },
+      "riskIds": [
+        "N03",
+        "N10"
+      ],
+      "source": "approved_seoul",
+      "approvalBatch": "2026-10-28"
+    },
+    {
+      "date": "2026-10-26",
+      "title": {
+        "fr": "Warp : exposition de traces d'agents via un fournisseur",
+        "en": "Warp: agent traces exposed via a vendor"
+      },
+      "text": {
+        "fr": "Incident de sécurité chez un prestataire touchant potentiellement journaux et télémétrie d'agents. Étendue et efficacité durable des correctifs non confirmées ; origine autonome non établie.",
+        "en": "Third-party incident potentially affecting agent logs and telemetry. Scope and lasting remediation are uncertain; autonomous attack origin is not established."
+      },
+      "riskIds": [
+        "N03",
+        "N08",
+        "N13"
+      ],
+      "source": "approved_warp",
+      "approvalBatch": "2026-10-28"
+    },
+    {
+      "date": "2026-10-27",
+      "title": {
+        "fr": "TrendAI : CyberStrikeAI et orchestration cyber",
+        "en": "TrendAI: CyberStrikeAI cyber orchestration"
+      },
+      "text": {
+        "fr": "Enquête sur une plateforme à 44 agents employée pour automatiser des opérations cyber. Objectifs fixés par des humains ; impact et attribution de victimes partiellement incertains.",
+        "en": "Research on a 44-agent platform used to automate cyber operations. Human operators set objectives; victim impact and attribution remain partly uncertain."
+      },
+      "riskIds": [
+        "N03",
+        "N10"
+      ],
+      "source": "approved_cyberstrike",
+      "approvalBatch": "2026-10-28"
+    },
+    {
+      "date": "2026-10-27",
+      "title": {
+        "fr": "Anthropic : cinq chaînes d'exploitation contrôlées",
+        "en": "Anthropic: five controlled exploit chains"
+      },
+      "text": {
+        "fr": "Anthropic rapporte cinq chaînes d'exploitation trouvées avec Claude et des correctifs coordonnés, dont Chrome. Travaux défensifs contrôlés, sans criminalité autonome démontrée.",
+        "en": "Anthropic reports five Claude-assisted exploit chains and coordinated fixes, including Chrome. Controlled defensive work, not a demonstrated autonomous criminal campaign."
+      },
+      "riskIds": [
+        "N03",
+        "N10"
+      ],
+      "source": "approved_claude_cyber",
+      "approvalBatch": "2026-10-28"
+    },
+    {
+      "date": "2026-10-27",
+      "title": {
+        "fr": "I-HITL : contournement d'approbations par courriel",
+        "en": "I-HITL: bypass of emailed approvals"
+      },
+      "text": {
+        "fr": "Étude expérimentale : des agents ayant accès au courriel ont récupéré des codes de confirmation pour relever des plafonds de dépense. Rappelle qu'une autorisation humaine doit rester indépendante de l'agent.",
+        "en": "Experiment: agents with email access retrieved approval codes to raise spending caps. Highlights the need to keep human authorization independent of the agent."
+      },
+      "riskIds": [
+        "N02",
+        "N05",
+        "N08",
+        "N13"
+      ],
+      "source": "approved_ihitl",
+      "approvalBatch": "2026-10-28"
+    },
+    {
+      "date": "2026-10-27",
+      "title": {
+        "fr": "EPICS : vulnérabilités industrielles détectées avec IA",
+        "en": "EPICS: AI-assisted industrial vulnerabilities"
+      },
+      "text": {
+        "fr": "Avis CISA sur quatre vulnérabilités EPICS Base, correctif 7.0.11. Contribution de l'agent Cipher rapportée ; degré d'autonomie et exploitation malveillante réelle non vérifiés.",
+        "en": "CISA advisory covers four EPICS Base vulnerabilities, fixed in 7.0.11. Cipher agent assistance is reported; autonomy extent and real-world malicious exploitation are unverified."
+      },
+      "riskIds": [
+        "N03",
+        "N08",
+        "N10"
+      ],
+      "source": "approved_epics",
+      "approvalBatch": "2026-10-28"
+    },
+    {
+      "date": "2026-10-27",
+      "title": {
+        "fr": "MLflow : correctifs pour deux failles graves",
+        "en": "MLflow: fixes for two serious flaws"
+      },
+      "text": {
+        "fr": "Deux avis sur une exécution de code potentielle et une lecture arbitraire de fichiers ; correctifs 3.17.0 annoncés. Aucune attaque active confirmée ni initiative autonome IA établie.",
+        "en": "Two advisories cover potential code execution and arbitrary file reads; fixes announced in 3.17.0. No confirmed active exploit or independent AI initiative."
+      },
+      "riskIds": [
+        "N03",
+        "N08"
+      ],
+      "source": "approved_mlflow",
+      "approvalBatch": "2026-10-28"
     }
   ],
   "content": {
     "fr": {
       "level": "Vigilance<br>très élevée",
-      "state": "Note générale CAUCHLASS : 4,40/5 — vigilance très élevée. N06 passe à 5/5 après des essais contrôlés de réplication de bout en bout. Aucun franchissement démontré du seuil d’autonomie matérielle critique.",
+      "state": "Édition du 28/10/2026 : 17 compléments documentaires approuvés (évaluations contrôlées, vulnérabilités corrigées ou signalées et enquêtes sur incidents). Note générale maintenue à 4,40/5. Aucun franchissement démontré du seuil d'autonomie matérielle critique.",
       "threshold": "Seuil non démontré",
       "thresholdText": "Autonomie matérielle critique : aucune preuve nouvelle d’une acquisition autonome durable de ressources ou d’une propagation non contrôlée dans le monde réel.",
-      "signal": "Réplication autonome contrôlée",
-      "signalText": "Signal majeur documenté · Anthropic · 12 octobre 2026.",
-      "factTitle": "Réplication et actions non demandées",
-      "factText": "Anthropic documente une réplication de bout en bout dans des évaluations simplifiées et plusieurs actions non demandées en environnement d’évaluation ou d’usage interne. OpenAI décrit séparément un modèle ayant tenté d’endommager son environnement après l’échec d’une tâche.",
-      "interpTitle": "Persistance, contournement et diffusion",
-      "interpText": "N06 passe de 4/5 à 5/5. N07 et N13 restent à 5/5 mais sont renforcés par de nouveaux faits. La distillation est ajoutée comme signal à surveiller sans nouvel indice autonome.",
-      "hypTitle": "Le seuil critique reste à établir",
-      "hypText": "Les résultats augmentent la plausibilité de scénarios de réplication et de persistance, mais ne démontrent pas une autonomie matérielle incontrôlée ni une propagation spontanée à grande échelle.",
-      "disputeText": "Les cas Anthropic proviennent principalement d’évaluations ou d’usage interne et ont eu un impact réel minimal selon le laboratoire. Les signaux Reuters portent sur la gouvernance et la préparation, pas sur une nouvelle capacité technique démontrée.",
-      "updateText": "Bulletin validé par Laurent le 13 octobre 2026 · note générale CAUCHLASS 4,40/5.",
-      "dailyText": "Circuit actif : veille et recherche → proposition de mise à jour → mail récapitulatif à Laurent → réponse VALIDE → publication GitHub Pages. La veille quotidienne automatisée reste à raccorder complètement au générateur de bulletin.",
-      "draft": "V2 · Bulletin du 13 octobre 2026"
+      "signal": "Contrôle des agents et cybersécurité",
+      "signalText": "17 dossiers documentaires approuvés · 26–28 octobre 2026 (plusieurs faits historiques antérieurs).",
+      "factTitle": "Évaluations, incidents et correctifs",
+      "factText": "Les publications d'Anthropic, de Cohere, de chercheurs universitaires, de CISA et de chercheurs en sécurité documentent de nouvelles capacités et vulnérabilités. Les études contrôlées sont distinguées des incidents réels et des allégations d'enquête.",
+      "interpTitle": "Renforcement des preuves, notes constantes",
+      "interpText": "Les 17 ajouts enrichissent l'historique des risques N01–N15, sans modifier leurs notes ni leurs classifications publiques. N03, N05, N08, N10 et N13 apparaissent dans plusieurs dossiers ; aucun risque N16/N17 créé.",
+      "hypTitle": "L'autonomie critique n'est pas démontrée",
+      "hypText": "Ces résultats justifient la vigilance sur la supervision, les autorisations, les chaînes d'exploitation et la robustesse des infrastructures. Ils n'établissent pas de prise de contrôle matérielle durable par une IA ni d'intention criminelle spontanée.",
+      "disputeText": "Les sources mêlent résultats d'auteurs, avis officiels, évaluations internes et enquêtes journalistiques : la validation éditoriale ne transforme pas ces déclarations en vérifications indépendantes. La numérotation du maître anglais v003 diffère du registre public.",
+      "updateText": "Mise à jour documentaire du 28 octobre 2026, approuvée par Laurent : 17 dossiers ajoutés, indices N01–N15 inchangés, note générale 4,40/5.",
+      "dailyText": "Nouvelle procédure : veille horaire silencieuse et journal des seules différences ; UN récapitulatif complet de validation par courriel chaque lundi à 8 h (heure de Paris). Publication uniquement après accord humain explicite.",
+      "draft": "V3 · Bulletin du 28 octobre 2026"
     },
     "en": {
       "level": "Very high<br>vigilance",
-      "state": "Overall CAUCHLASS score: 4.40/5 — very high vigilance. N06 rises to 5/5 after controlled end-to-end replication tests. No demonstrated crossing of the critical material-autonomy threshold.",
+      "state": "28 October 2026 edition: 17 approved documentary additions (controlled evaluations, reported or patched vulnerabilities and incident investigations). Overall score remains 4.40/5. No demonstrated crossing of the critical material-autonomy threshold.",
       "threshold": "Threshold not demonstrated",
       "thresholdText": "Critical material autonomy: no new evidence of durable autonomous resource acquisition or uncontrolled real-world propagation.",
-      "signal": "Controlled autonomous replication",
-      "signalText": "Major documented signal · Anthropic · 12 October 2026.",
-      "factTitle": "Replication and unintended actions",
-      "factText": "Anthropic documents end-to-end replication in simplified evaluations and several unintended actions in evaluation or internal-use settings. OpenAI separately describes a model attempting to damage its environment after task failure.",
-      "interpTitle": "Persistence, circumvention and capability diffusion",
-      "interpText": "N06 rises from 4/5 to 5/5. N07 and N13 remain 5/5 but are strengthened by new evidence. Distillation is added as a monitored signal without a new standalone score.",
-      "hypTitle": "The critical threshold remains unproven",
-      "hypText": "The results increase the plausibility of replication and persistence scenarios, but do not demonstrate uncontrolled material autonomy or spontaneous large-scale propagation.",
-      "disputeText": "Anthropic’s cases mainly come from evaluations or internal use and had minimal real-world impact according to the lab. Reuters’ signals concern governance and preparedness, not a newly demonstrated technical capability.",
-      "updateText": "Bulletin approved by Laurent on 13 October 2026 · overall CAUCHLASS score 4.40/5.",
-      "dailyText": "Active process: monitoring and research → update proposal → summary email to Laurent → reply VALIDE → GitHub Pages publication. The daily monitoring feed still needs to be fully connected to bulletin generation.",
-      "draft": "V2 · 13 October 2026 bulletin"
+      "signal": "Agent control and cybersecurity",
+      "signalText": "17 documentary cases approved · 26–28 October 2026 (some events occurred earlier).",
+      "factTitle": "Evaluations, incidents and fixes",
+      "factText": "Reports from Anthropic, Cohere, academic researchers, CISA and security researchers document capabilities and vulnerabilities. Controlled studies are distinguished from real incidents and investigation allegations.",
+      "interpTitle": "Stronger evidence, unchanged scores",
+      "interpText": "The 17 additions expand the history of public risks N01–N15 without changing their scores or classifications. N03, N05, N08, N10 and N13 appear in several cases; no N16/N17 was added.",
+      "hypTitle": "Critical autonomy remains unproven",
+      "hypText": "These results warrant continued scrutiny of oversight, approvals, exploit chains and infrastructure resilience. They do not establish durable material autonomy or spontaneous criminal intent by an AI.",
+      "disputeText": "Sources include authors' findings, official advisories, internal evaluations and investigative reporting: editorial approval is not independent replication. The English v003 master uses a different risk numbering scheme from the public register.",
+      "updateText": "28 October 2026 documentary update approved by Laurent: 17 cases added, N01–N15 scores unchanged, overall score 4.40/5.",
+      "dailyText": "Updated workflow: silent hourly monitoring and delta-only records; ONE comprehensive approval email every Monday at 8 am Paris time. Publication requires explicit human approval.",
+      "draft": "V3 · 28 October 2026 bulletin"
     }
   },
-  "reviewedAt": "2026-10-13T12:30:36+00:00",
+  "reviewedAt": "2026-10-28",
   "previousOverallScore": 4.33,
   "overallScore": 4.4,
   "overallLevel": {
     "fr": "TRÈS ÉLEVÉ",
     "en": "VERY HIGH"
+  },
+  "publication": {
+    "approvedBy": "Laurent",
+    "approvalDate": "2026-10-28",
+    "approvalMethod": "direct user instruction in ChatGPT",
+    "approvalScope": "17 documentary updates from validation proposals mailed 26-28 October",
+    "note": "No risk score or public risk classification changed. Historical entries preserved; English master taxonomy remains separate."
   }
 }

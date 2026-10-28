@@ -45,3 +45,6 @@
 .landing-approval .approval-stamp{margin:0;padding:12px 18px;border-left:4px solid var(--orange);display:flex;justify-content:center;align-items:center;gap:10px;max-width:100%;text-align:left}
 .landing-approval .approval-stamp span:last-child{white-space:nowrap}
 @media(max-width:700px){.landing-approval{margin-top:20px}.landing-approval .approval-stamp{justify-content:flex-start;padding:12px 14px;gap:8px;font-size:12px}.landing-approval .approval-stamp strong{flex:1}.landing-approval .approval-stamp span:last-child{font-size:12px}}
+
+/* Approved incident history within each risk file — 28 Oct 2026 */
+.risk-history{margin-top:24px;padding-top:16px;border-top:1px solid var(--line)}.risk-history h4{font-size:16px;margin:0 0 12px}.risk-history ul{list-style:none;padding:0;margin:0}.risk-history li{border-left:2px solid var(--line);padding:10px 0 12px 14px;margin-bottom:10px}.risk-history time{display:block;font-size:12px;color:var(--muted)}.risk-history strong{display:block;margin:4px 0}.risk-history p{font-size:14px;margin:5px 0}.risk-history a{overflow-wrap:anywhere}
